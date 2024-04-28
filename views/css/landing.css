@@ -1,0 +1,479 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+@import 'template/root.css';
+@import 'template/html.css';
+@import 'template/miniprofile.css';
+@import 'template/footer.css';
+
+/* test */
+.nav-container {
+  display: flex;
+  align-items: center;
+  background-color: #e9f5ff;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-list {
+  width: 100%;
+}
+
+.nav-list ul {
+  display: flex;
+  justify-content: right;
+}
+
+.nav-list ul li {
+  list-style-type: none;
+}
+
+.nav-list ul li a {
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 20px;
+  color: #3c3c3c;
+  text-decoration: none;
+  margin-inline: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 99px;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-list ul li a:hover {
+  background-color: #002d53;
+  color: white;
+  opacity: 80%;
+}
+.navlogo img {
+  width: 20%;
+  margin-left: 2rem;
+}
+
+ul li a.signupNav {
+  margin-inline-end: 1rem;
+  background-color: #91d9c5;
+}
+
+ul li a.logoutNav {
+  margin-inline-end: 1rem;
+  background-color: #91d9c5;
+}
+
+ul li a.loginNav {
+  color: #edca74;
+  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.35);
+}
+
+ul li a.discoverNav {
+  color: #edca74;
+  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.35);
+}
+/* body */
+body {
+  background-image: url("../img/doodle_art_1.png");
+}
+/*  */
+
+/* Homepage */
+#home {
+  margin-bottom: 2rem;
+}
+.homeTitle {
+  font-size: 1.5rem;
+  text-align: right;
+}
+#home article {
+  align-items: center;
+  padding-top: 11rem;
+  justify-content: space-around;
+}
+#home article {
+  display: flex;
+}
+
+.unleash {
+  color: #edca74;
+  text-shadow: 1.5px 2px 2px rgba(0, 0, 0, 0.35);
+}
+/*  */
+
+/* About Us */
+#aboutus {
+  background-image: url("../img/Vector\ bg.png");
+  padding-bottom: 10rem;
+  padding-top: 7rem;
+}
+
+#aboutus .title {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+#aboutus article {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutus img {
+  width: 50%;
+  height: fit-content;
+  padding-top: 3rem;
+}
+
+#aboutus p {
+  text-align: center;
+  padding-top: 8rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#aboutus h2 {
+  text-align: left;
+  margin-left: 17.3rem;
+  padding-top: 12rem;
+  font-size: 3rem;
+}
+/*  */
+
+/* Contact Us */
+#contactus {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+#contactus h2 {
+  margin-top: 7rem;
+  font-size: 40px;
+}
+
+.ctTitleL {
+  color: #91d9c5;
+  text-shadow: 1px 1px black;
+}
+
+.ctTitleR {
+  color: #edca74;
+  text-shadow: 1px 1px black;
+}
+
+#contactus input[type="text"],
+#contactus input[type="email"] {
+  font-size: 20px;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  background-color: #cccccc94;
+  border: 1px solid #cccccc94;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.jobDescBox {
+  width: 60%;
+  height: 20rem;
+  text-align: left;
+  padding: 12px 20px;
+  margin: 20px 0;
+  display: inline-block;
+  background-color: #cccccc94;
+  border: 1px solid #cccccc94;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+textarea {
+  display: none;
+  font-size: 20px;
+  width: 100%;
+  border: transparent;
+  text-decoration: none;
+  resize: none;
+}
+
+textarea:focus-visible {
+  border-color: transparent;
+  outline:none;
+}
+
+#fake-placeholder {
+  font-size: 20px;
+  width: 100%;
+  border: transparent;
+  text-align: center;
+  margin-top: 8rem;
+  background-color: transparent;
+}
+
+#job-description:focus::placeholder {
+  color: transparent;
+}
+
+#job-description:focus {
+text-align: left;
+}
+/*  */
+
+/* Modals */
+/* Pop Up Modal */
+#id01,
+#id02,
+#id03,
+#id04 {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Submit Success */
+#id04 {
+  overflow: auto;
+  padding-top: 60px;
+}
+/* Box */
+.sbtSuccess {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  width: 50%;
+  height: 50%;
+  border-radius: 50px;
+}
+
+/* the Checklist */
+.checklist {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.check {
+  margin-top: 3rem;
+  width: 20%;
+}
+
+/* the text */
+.popupprompt {
+  text-align: center;
+  padding-bottom: 16px;
+}
+/* end */
+
+/* Modal Design */
+#id03 .modal {
+  margin: 10% auto 15% auto;
+}
+
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+.form-group input[name="fname"]{
+  border-radius: 30px 0px 0px 30px;
+}
+.form-group input[name="lname"]{
+  border-radius: 0px 30px 30px 0px;
+}
+
+.form-group input[type="text"] {
+  width: 48%;
+}
+
+input {
+  background-color: #f0f3fb;
+}
+
+.modal {
+  border-radius: 50px;
+  background-color: white;
+  margin: 5% auto 15% auto;
+  width: 25%;
+  box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.48);
+}
+/* end */
+
+/* Modal Content */
+.modalContent {
+  padding: 0px 26px 26px 26px;
+  border-radius: 50px;
+}
+
+.content-employeelevel {
+  display: flex;
+  /* text-align: center; */
+}
+
+.modal input {
+  border-radius: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.modal select  {
+  border-radius: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+/* end */
+
+/* Modal's Image / Title */
+.imgcontainer {
+  padding: 25px 25px 0px 25px;
+  text-align: center;
+  margin: 24px 0 0 0;
+  position: relative;
+}
+
+#id02 .imgcontainer {
+  margin-bottom: 24px;
+  padding-top: 3rem;
+}
+
+#id03 .imgcontainer {
+  padding: 50px 25px 30px 25px;
+}
+
+img.avatar {
+  width: 100%;
+}
+/* end */
+
+/* Redirect Link */
+.redirLink {
+  padding-left: 30px;
+  font-weight: 300;
+  color: #303030;
+  padding-top: 0px;
+  font-size: 0.8rem;
+}
+
+a.forgotpw:hover {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+a.create:hover {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+a.back:hover {
+  color: #3366cc;
+  text-decoration: underline;
+}
+
+a.login:hover {
+  color: #3366cc;
+  text-decoration: underline;
+}
+/* end */
+
+/* Button */
+button {
+  border-radius: 50px;
+  background-color: #fec006;
+  color: #000;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Sign In/Up btn */
+.btnWrap {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+button.signin {
+  width: 100;
+  background-color: #53b1fb;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48);
+  color: #fff;
+}
+button.signup {
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48);
+}
+
+button.contact {
+  width: 10%;
+  font-size: 20px;
+  background-color: #91d9c5;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 8px 80px 800px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+/* end */
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+/* end */
+
+/* Modal Pop - Up Animate */
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.3s;
+  animation: animatezoom 0.3s;
+}
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+/* end */
